@@ -1,0 +1,23 @@
+def verificar_primo(int n) {
+    int divisor;
+    int resto;
+    int eh_primo;
+
+    eh_primo = 1;
+
+    if (n <= 1) {
+        eh_primo = 0;
+    }
+
+    divisor = 2;
+
+    if (divisor * divisor <= n) {
+        resto = n - divisor * (n / divisor);
+        if (resto == 0) {
+            eh_primo = 0;
+        }
+        divisor = divisor + 1;
+    }
+
+    return eh_primo;
+}

@@ -1,0 +1,50 @@
+def calcular_fatorial(int numero) {
+    int resultado;
+    int contador;
+
+    resultado = 1;
+    contador = 1;
+
+    if (contador <= numero) {
+        resultado = resultado * contador;
+        contador = contador + 1;
+    }
+
+    return resultado;
+}
+
+def encontrar_maximo(int a, int b, int c) {
+    int maior;
+
+    maior = a;
+
+    if (b > maior) {
+        maior = b;
+    }
+
+    if (c > maior) {
+        maior = c;
+    }
+
+    return maior;
+}
+
+def main() {
+    int x;
+    int y;
+    int z;
+    int resultado_fatorial;
+    int resultado_maximo;
+
+    x = 7;
+    y = 5;
+    z = 12;
+
+    resultado_fatorial = calcular_fatorial(y);
+    print resultado_fatorial;
+
+    resultado_maximo = encontrar_maximo(x, y, z);
+    print resultado_maximo;
+
+    return;
+}
