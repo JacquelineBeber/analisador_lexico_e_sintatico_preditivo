@@ -200,3 +200,10 @@ class AnalisadorLexico:
         print(self.tokens_encontrados)
 
         print("=" * 60 + "\n")
+        
+        # print("\n" + "=" * 60)
+        # print("TOKENS DETALHADOS")
+        # print("=" * 60)
+
+        # for i, token in enumerate(self.tokens_encontrados, 1):
+        #     print(f"{i:3d}, {token.token_detalhado()}")
