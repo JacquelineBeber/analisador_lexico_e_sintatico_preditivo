@@ -12,7 +12,7 @@ def processar(int n) {
     return;
 }
 
-def principal() {
+def main() {
     int entrada;
     entrada = 5;
     

@@ -212,7 +212,7 @@ class AnalisadorSintatico:
     def erro_sintatico(self, esperado, encontrado):
         raise Exception(f"Erro Sintático! \n Encontrado: '{encontrado}' \n Esperado: '{esperado}' \n Linha: {self.token_atual.linha} \n Coluna: {self.token_atual.coluna}")
 
-    def analisar(self):
+    def analisar_sintaticamente(self):
         print(f"{'PILHA':<90} {'ENTRADA':<25} {'AÇÃO'}")
         print("-" * 150)
 
@@ -252,5 +252,5 @@ class AnalisadorSintatico:
                 else:
                     self.erro_sintatico(self.tabela[topo], token)
 
-        print("-" * 100)
-        print("Análise Sintática Concluída com Sucesso!")
+        print("-" * 150)
+        print("\n Análise Sintática Concluída com Sucesso!")

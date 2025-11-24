@@ -13,7 +13,7 @@ def calculoSimples(int a, int b) {
     return resultado;
 }
 
-def principal() {
+def main() {
     int x, y;
     int final;
     

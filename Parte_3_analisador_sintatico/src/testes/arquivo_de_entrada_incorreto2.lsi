@@ -11,7 +11,7 @@ def verificaValor(int v) {
     return;
 }
 
-def principal() {
+def main() {
     int a;
     int b;
     
