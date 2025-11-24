@@ -18,7 +18,7 @@ def main():
         print("Uso correto:")
         print(f"python3 {sys.argv[0]} <caminho_do_arquivo.lsi>")
         print("\nExemplo:")
-        print(f"python3 {sys.argv[0]} testes/programa_correto.lsi")
+        print(f"python3 {sys.argv[0]} Parte_1_analisador_lexico/src/testes/arquivo_de_entrada_correto.lsi")
         print()
         sys.exit(1)
 
