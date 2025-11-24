@@ -1,5 +1,5 @@
 def encontrar_maximo(int a, int b, int c) {
-    int maior;
+    int maior@;
 
     maior = a;
 
