@@ -1,0 +1,73 @@
+def soma(int a, int b) {
+    int res;
+    res = a + b;
+    return res;
+}
+
+def fatorial(int n) {
+    int res;
+    int aux;
+    int um;
+    
+    um = 1;
+
+    if (n <= 1) {
+        res = 1;
+    } else {
+        { 
+            aux = n - 1;
+            res = n * fatorial(aux);
+        }
+    }
+    return res;
+}
+
+def checaValor(int x) {
+    int val;
+    int zero;
+    
+    val = 999;
+    zero = 0;
+
+    if (x > 10) {
+        print x;
+    } else {
+        if (x == 10) {
+            print val;
+        } else {
+            print zero;
+        }
+    }
+    return;
+}
+
+def principal() {
+    int x, y, z;
+    int w;
+    int param;
+    int dois;
+    
+    x = 10;
+    y = 20;
+    
+    z = soma(x, y);
+    print z;
+    
+    param = 5;
+    w = fatorial(param);
+    print w;
+    
+    result = checaValor(z);
+    
+    x = x + 1;
+    y = y * 2;
+    z = x + y;
+    dois = 2;
+    z = z / dois;
+    
+    if (z != 0) {
+        print z;
+    }
+    
+    return;
+}

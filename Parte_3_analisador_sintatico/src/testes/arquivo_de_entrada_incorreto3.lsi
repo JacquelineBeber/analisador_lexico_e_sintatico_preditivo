@@ -1,0 +1,9 @@
+def func1() {
+    return 1;
+}
+
+x = 10;
+
+def principal() {
+    return;
+}

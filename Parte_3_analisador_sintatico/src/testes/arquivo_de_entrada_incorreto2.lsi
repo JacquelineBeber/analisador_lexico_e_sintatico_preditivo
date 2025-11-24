@@ -1,0 +1,7 @@
+def main() {
+    int x;
+    if (x > 10 {
+        print x;
+    }
+    return;
+}
