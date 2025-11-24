@@ -27,23 +27,19 @@ Requisitos do Sistema:
 
 Como Executar o Programa:
 
-    Para executar o código você deve estar na pasta src dentro de Parte_1_analisador_lexico, para isso rode no terminal:
+    Para executar o código você rodar o seguinte trecho, alterando caminho_do_arquivo.lsi para o caminho do arquivo correto:
 
-            cd Parte_1_analisador_lexico/src
-    
-    Depois execute o seguinte trecho, alterando caminho_do_arquivo.lsi para o caminho do arquivo correto:
-
-            python3 main.py caminho_do_arquivo.lsi
+            python3 Parte_1_analisador_lexico/src/main.py caminho_do_arquivo.lsi
         
         Exemplo utilizando os testes criados:
 
             Arquivo de Teste Correto:
 
-                python3 main.py testes/arquivo_de_entrada_correto.lsi
+                python3 Parte_1_analisador_lexico/src/main.py Parte_1_analisador_lexico/src/testes/arquivo_de_entrada_correto.lsi
             
             Arquivo de Teste Incorreto:
 
-                python3 main.py testes/arquivo_de_entrada_incorreto.lsi
+                python3 Parte_1_analisador_lexico/src/main.py Parte_1_analisador_lexico/src/testes/arquivo_de_entrada_incorreto.lsi
     
 Saídas Esperadas:
 
