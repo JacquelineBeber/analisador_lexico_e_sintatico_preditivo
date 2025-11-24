@@ -1,0 +1,81 @@
+def calcularResto(int dividendo, int divisor) {
+    int quociente;
+    int produto;
+    int resto;
+    
+    quociente = dividendo / divisor;
+    produto = quociente * divisor;
+    resto = dividendo - produto;
+    
+    return resto;
+}
+
+def somaDigitos(int n) {
+    int dez;
+    int resto;
+    int div;
+    int somaParcial;
+    int resultado;
+    
+    dez = 10;
+    
+    if (n < dez) {
+        resultado = n;
+    } else {
+        {
+            resto = calcularResto(n, dez);
+            div = n / dez;
+            somaParcial = somaDigitos(div);
+            resultado = resto + somaParcial;
+        }
+    }
+    
+    return resultado;
+}
+
+def verificaParidade(int valor) {
+    int dois;
+    int resto;
+    int resposta;
+    
+    dois = 2;
+    resto = calcularResto(valor, dois);
+    
+    if (resto == 0) {
+        resposta = 1;
+    } else {
+        resposta = 0;
+    }
+    
+    return resposta;
+}
+
+def main() {
+    int numeroAlvo;
+    int soma;
+    int ehPar;
+    int codigoSucesso;
+    
+    numeroAlvo = 9876;
+    
+    print numeroAlvo;
+    
+    soma = somaDigitos(numeroAlvo);
+    print soma;
+    
+    ehPar = verificaParidade(soma);
+    
+    if (ehPar == 1) {
+        {
+            codigoSucesso = 100;
+            print codigoSucesso;
+        }
+    } else {
+        {
+            codigoSucesso = 0;
+            print codigoSucesso;
+        }
+    }
+    
+    return;
+}

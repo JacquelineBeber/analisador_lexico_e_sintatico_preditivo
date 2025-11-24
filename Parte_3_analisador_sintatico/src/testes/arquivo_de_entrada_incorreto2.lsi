@@ -1,0 +1,24 @@
+def verificaValor(int v) {
+    int limite;
+    limite = 50;
+    
+    if (v > limite) {
+        print v;
+    } else {
+        print 0;
+    }
+    
+    return;
+}
+
+def main() {
+    int a;
+    int b;
+    
+    a = 10;
+    b = 20;
+
+    verificaValor(a);
+
+    return;
+}

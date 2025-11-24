@@ -1,0 +1,22 @@
+def processar(int n) {
+    int zero;
+    zero = 0;
+    
+    if (n > zero) {
+        print n;
+        return; 
+    } else {
+        print zero;
+    }
+    
+    return;
+}
+
+def main() {
+    int entrada;
+    entrada = 5;
+    
+    processar(entrada);
+    
+    return;
+}

@@ -1,0 +1,28 @@
+def calculoSimples(int a, int b) {
+    int resultado;
+    int temp;
+    
+    temp = a;
+    
+    if (a < b) {
+        resultado = b - a;
+    } else {
+        resultado = a - b;
+    }
+    
+    return resultado;
+}
+
+def main() {
+    int x, y;
+    int final;
+    
+    x = 10;
+    y = 20;
+    
+    final = calculoSimples(x, y)
+    
+    print final;
+    
+    return;
+}
