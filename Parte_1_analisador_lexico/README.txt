@@ -27,7 +27,7 @@ Requisitos do Sistema:
 
 Como Executar o Programa:
 
-    Para executar o código você rodar o seguinte trecho, alterando caminho_do_arquivo.lsi para o caminho do arquivo correto:
+    Para executar o código você deve rodar o seguinte trecho, alterando caminho_do_arquivo.lsi para o caminho do arquivo correto:
 
             python3 Parte_1_analisador_lexico/src/main.py caminho_do_arquivo.lsi
         
@@ -45,16 +45,16 @@ Saídas Esperadas:
 
     Para arquivos corretos:
 
-        - Lista de tokens encontrados
+        - Lista de tokens encontrados;
 
-        - Tabela de símbolos com palavras-chave e identificadores
+        - Tabela de símbolos com palavras-chave e identificadores;
 
-        - Mensagem de sucesso
+        - Mensagem de sucesso.
     
-        * É possível verificar uma lista de tokens mais detalhada, para isso descomente as linhas 204 a 209 do arquivo analisador_lexico,
-        ele pode ser encontrado dentro de src/lexer/analisador_lexico.py
+      * É possível verificar uma lista de tokens mais detalhada, para isso descomente as linhas 204 a 209 do arquivo analisador_lexico,
+        ele pode ser encontrado dentro de src/lexer/analisador_lexico.py.
 
      Para arquivos incorretos:
 
-        - Mensagem de erro indicando a linha e coluna do erro léxico, assim como o caracter inválido
+        - Mensagem de erro indicando a linha e coluna do erro léxico, assim como o caracter inválido.
 

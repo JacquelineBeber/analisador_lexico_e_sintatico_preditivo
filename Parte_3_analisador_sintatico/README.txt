@@ -18,7 +18,7 @@ Descrição do Trabalho:
     
     A terceira parte do trabalho implementa um Analisador Sintático com base na Tabela de Reconhecimento Sintático criada na Parte 2.
     
-    A elaboração da tabela pode ser encontrada no pdf presente na pasta Parte_2_analisador_sintatico_PDF
+    A elaboração da tabela pode ser encontrada no pdf presente na pasta Parte_2_analisador_sintatico_PDF.
         
     Para uma melhor visualização criamos ela no GoogleSheets, no seguinte link:
         https://docs.google.com/spreadsheets/d/1cVK4ZIDSYa3Rqk-xt89RHHR0i-8UtqpUAtw74EK-S_U/edit?usp=sharing 
@@ -33,7 +33,7 @@ Requisitos do Sistema:
 
 Como Executar o Programa:
 
-    Para executar o código você rodar o seguinte trecho, alterando caminho_do_arquivo.lsi para o caminho do arquivo correto:
+    Para executar o código você deve rodar o seguinte trecho, alterando caminho_do_arquivo.lsi para o caminho do arquivo correto:
 
             python3 Parte_3_analisador_sintatico/src/main.py caminho_do_arquivo.lsi
         
@@ -43,24 +43,21 @@ Como Executar o Programa:
 
                 python3 Parte_3_analisador_sintatico/src/main.py Parte_3_analisador_sintatico/src/testes/arquivo_de_entrada_correto.lsi
             
-            Arquivo de Teste Incorreto:
+            Arquivos de Testes Incorretos:
 
-                python3 Parte_3_analisador_sintatico/src/main.py Parte_3_analisador_sintatico/src/testes/arquivo_de_entrada_incorreto.lsi
+                python3 Parte_3_analisador_sintatico/src/main.py Parte_3_analisador_sintatico/src/testes/arquivo_de_entrada_incorreto1.lsi
+                python3 Parte_3_analisador_sintatico/src/main.py Parte_3_analisador_sintatico/src/testes/arquivo_de_entrada_incorreto2.lsi
+                python3 Parte_3_analisador_sintatico/src/main.py Parte_3_analisador_sintatico/src/testes/arquivo_de_entrada_incorreto3.lsi
     
 Saídas Esperadas:
 
     Para arquivos corretos:
 
-        - Lista de tokens encontrados
+        - Parser preditivo guiado por tabela;
 
-        - Tabela de símbolos com palavras-chave e identificadores
-
-        - Mensagem de sucesso
-    
-        * É possível verificar uma lista de tokens mais detalhada, para isso descomente as linhas 204 a 209 do arquivo analisador_lexico,
-        ele pode ser encontrado dentro de src/lexer/analisador_lexico.py
+        - Mensagem de sucesso.
 
      Para arquivos incorretos:
 
-        - Mensagem de erro indicando a linha e coluna do erro léxico, assim como o caracter inválido
-
+        - Mensagem de erro indicando o caractere esperado, o caractere que foi encontrado, a linha e a coluna do erro sintático capturado
+          pelo analisador.
