@@ -52,13 +52,13 @@ def principal() {
     
     z = soma(x, y);
     print z;
-    
+
     param = 5;
     w = fatorial(param);
     print w;
-    
+
     result = checaValor(z);
-    
+
     x = x + 1;
     y = y * 2;
     z = x + y;
@@ -68,6 +68,6 @@ def principal() {
     if (z != 0) {
         print z;
     }
-    
+
     return;
 }

@@ -21,3 +21,9 @@ def verificar_primo(int n) {
 
     return eh_primo;
 }
+
+def main() {
+    int numero = 7;
+    eh_primo = verificar_primo(numero);
+    return;
+}
