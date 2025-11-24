@@ -1,73 +1,81 @@
-def soma(int a, int b) {
-    int res;
-    res = a + b;
-    return res;
+def calcularResto(int dividendo, int divisor) {
+    int quociente;
+    int produto;
+    int resto;
+    
+    quociente = dividendo / divisor;
+    produto = quociente * divisor;
+    resto = dividendo - produto;
+    
+    return resto;
 }
 
-def fatorial(int n) {
-    int res;
-    int aux;
-    int um;
+def somaDigitos(int n) {
+    int dez;
+    int resto;
+    int div;
+    int somaParcial;
+    int resultado;
     
-    um = 1;
-
-    if (n <= 1) {
-        res = 1;
+    dez = 10;
+    
+    if (n < dez) {
+        resultado = n;
     } else {
-        { 
-            aux = n - 1;
-            res = n * fatorial(aux);
+        {
+            resto = calcularResto(n, dez);
+            div = n / dez;
+            somaParcial = somaDigitos(div);
+            resultado = resto + somaParcial;
         }
     }
-    return res;
+    
+    return resultado;
 }
 
-def checaValor(int x) {
-    int val;
-    int zero;
+def verificaParidade(int valor) {
+    int dois;
+    int resto;
+    int resposta;
     
-    val = 999;
-    zero = 0;
-
-    if (x > 10) {
-        print x;
+    dois = 2;
+    resto = calcularResto(valor, dois);
+    
+    if (resto == 0) {
+        resposta = 1;
     } else {
-        if (x == 10) {
-            print val;
-        } else {
-            print zero;
-        }
+        resposta = 0;
     }
-    return;
+    
+    return resposta;
 }
 
 def principal() {
-    int x, y, z;
-    int w;
-    int param;
-    int dois;
+    int numeroAlvo;
+    int soma;
+    int ehPar;
+    int codigoSucesso;
     
-    x = 10;
-    y = 20;
+    numeroAlvo = 9876;
     
-    z = soma(x, y);
-    print z;
-
-    param = 5;
-    w = fatorial(param);
-    print w;
-
-    result = checaValor(z);
-
-    x = x + 1;
-    y = y * 2;
-    z = x + y;
-    dois = 2;
-    z = z / dois;
+    print numeroAlvo;
     
-    if (z != 0) {
-        print z;
+    soma = somaDigitos(numeroAlvo);
+    print soma;
+    
+    ehPar = verificaParidade(soma);
+    
+    if (ehPar == 1) {
+        {
+            codigoSucesso = 100;
+            print codigoSucesso;
+        }
+    } else {
+        {
+            codigoSucesso = 0;
+            print codigoSucesso;
+        }
     }
-
+    
     return;
 }

@@ -1,9 +1,22 @@
-def func1() {
-    return 1;
+def processar(int n) {
+    int zero;
+    zero = 0;
+    
+    if (n > zero) {
+        print n;
+        return; 
+    } else {
+        print zero;
+    }
+    
+    return;
 }
 
-x = 10;
-
 def principal() {
+    int entrada;
+    entrada = 5;
+    
+    processar(entrada);
+    
     return;
 }
