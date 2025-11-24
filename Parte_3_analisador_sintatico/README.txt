@@ -76,4 +76,8 @@ Saídas Esperadas:
                             result = verificaValor(a);
                 
                 No arquivo_de_entrada_incorreto3.lsi na linha 7 é esperado um '}', mas ele encontra um 'return' na pilha.
-                    Ele retorna 
+                    Isso acontece pois na nossa linguagem dentro de um if ou else deve se ter apenas uma declaração, para resolver isso
+                    é necessário adicionar mais um par de chaves dentro do if '{ }'.
+                    Encontramos essa limitação na nossa linguagem ao fazer o código correto 'arquivo_de_entrada_correto', dentro do código
+                    correto adicionamos mais um par de chaves para apresentar essa limitação e achamos interessante apresentar isso em um
+                    código incorreto também.
