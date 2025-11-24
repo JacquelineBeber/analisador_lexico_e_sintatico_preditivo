@@ -18,7 +18,9 @@ Descrição do Trabalho:
     
     A terceira parte do trabalho implementa um Analisador Sintático com base na Tabela de Reconhecimento Sintático criada na Parte 2.
     
-    A elaboração da tabela pode ser encontrada no pdf presente na pasta Parte_2_analisador_sintatico_PDF.
+    A elaboração da tabela e mais detalhes podem ser encontrados no pdf presente na pasta Parte_2_analisador_sintatico_PDF e também 
+    no link abaixo:
+        https://docs.google.com/document/d/1iaOrP_9rPahGwVvFCPGGYb-chio5JkwyTqHQ_algS_Q/edit?usp=sharing
         
     Para uma melhor visualização criamos ela no GoogleSheets, no seguinte link:
         https://docs.google.com/spreadsheets/d/1cVK4ZIDSYa3Rqk-xt89RHHR0i-8UtqpUAtw74EK-S_U/edit?usp=sharing 
